@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Szakdolgozat</string>
+    <string name="facebook_app_id">352105535246813</string>
+    <string name="fb_login_protocol_scheme">fb352105535246813</string>
+    <string name="facebook_login">Bejelentkezés Facebookkal</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Feed</string>
+    <string name="title_game">Game</string>
+    <string name="hello_hexa_game">Hello Hexa Game</string>
+    <string name="selectFeedLabel">Kategória választás</string>
+    <string name="kiv_laszt">Kiválaszt</string>
+    <string name="feedSaved">Fájl mentése sikeresen megtörtént! Offline is elérhető!</string>
+
+    <string-array name="selectFeedType">
+        <item>Diákoknak</item>
+        <item>Hallgatóknak</item>
+    </string-array>
+
+</resources>
