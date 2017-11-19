@@ -186,9 +186,6 @@ public class HexGrid extends ViewGroup {
             super(c, attrs);
         }
 
-        /**
-         * {@inheritDoc}
-         */
         public LayoutParams(ViewGroup.LayoutParams source) {
             super(source);
         }

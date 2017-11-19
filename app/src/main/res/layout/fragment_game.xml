@@ -7,398 +7,291 @@
 
     <com.example.radva.szakdolgozat.HexGrid
         android:id="@+id/hexGrid1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dp"
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:numColumns="4"
+        android:columnWidth="0dp"
+        android:stretchMode="columnWidth"
+        android:gravity="top"
         app:max_columns="13"
         app:max_rows="13"
         app:radius="15dp"
-        app:start_indented="true" >
+        app:start_indented="false">
 
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
-
         <include layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
     </com.example.radva.szakdolgozat.HexGrid>
 
 </RelativeLayout>
