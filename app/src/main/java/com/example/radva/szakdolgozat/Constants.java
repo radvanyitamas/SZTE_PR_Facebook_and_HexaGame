@@ -6,7 +6,9 @@ public class Constants {
     private Constants() {
     }
 
-    public static final String PREFENCES_ACCESS_TOKEN = "access_token";
+    public static final String PREFERENCES_USER_ID = "user_id";
+    public static final String PREFERENCES_USER_FIRST_NAME = "first_name";
+    public static final String PREFERENCES_USER_LAST_NAME = "last_name";
 
     public static final String SAVED_FILE_NAME = "jsonFeed.json";
 }

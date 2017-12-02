@@ -1,12 +1,17 @@
 package com.example.radva.szakdolgozat;
 
+import android.app.Activity;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -41,13 +46,15 @@ import java.util.List;
 
 public class FeedFragment extends Fragment {
 
-    private static boolean isNetworkAvaible;
+    private boolean isNetworkAvaible;
 
     private RecyclerView recyclerView;
 
     final List<Feed> feeds = new ArrayList<>();
 
     static final int READ_BLOCK_SIZE = 100;
+    private FeedAdapter feedAdapter;
+    private Context context;
 
     public FeedFragment() {
         // Required empty public constructor
@@ -61,7 +68,6 @@ public class FeedFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_feed, container, false);
         recyclerView = (RecyclerView) root.findViewById(R.id.recyclerView);
-
 
         Spinner mySpinner = (Spinner) root.findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.selectFeedType, android.R.layout.simple_spinner_item);
@@ -91,36 +97,28 @@ public class FeedFragment extends Fragment {
         RecyclerView.LayoutManager manager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(manager);
 
-        isNetworkAvaible(getContext());
-        initializeData();
+        isNetworkAvailable(getContext());
         initializeAdapter();
+        initializeData();
 
     }
 
-    public static boolean isNetworkAvaible() {
-        return isNetworkAvaible;
-    }
-
-    public static boolean isNetworkAvaible(Context context) {
+    public void isNetworkAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = connectivityManager.getActiveNetworkInfo();
-        if (netInfo != null && netInfo.isConnected()) {
-            return isNetworkAvaible = true;
-        }
-        return isNetworkAvaible = false;
+        isNetworkAvaible = netInfo != null && netInfo.isConnected();
     }
 
 
-    public List<Feed> initializeData() {
+    public void initializeData() {
+        context = getContext();
         GsonBuilder builder = new GsonBuilder();
 
         builder.serializeNulls();
 
         final Gson gson = builder.create();
 
-        isNetworkAvaible();
-
-        if (isNetworkAvaible == true) {
+        if (isNetworkAvaible) {
             final GraphRequest request = GraphRequest.newGraphPathRequest(
                     AccessToken.getCurrentAccessToken(),
                     "/szte.ttik.inf/posts",
@@ -129,33 +127,38 @@ public class FeedFragment extends Fragment {
                         public void onCompleted(GraphResponse response) {
                             JSONObject jsonObject = response.getJSONObject();
 
+                            if(jsonObject == null) {
+                                return;
+                            }
+
+                            System.out.println("jsonObject = " + jsonObject);
+
                             try {
+                                feeds.clear();
                                 JSONArray data = jsonObject.getJSONArray("data");
                                 for (int i = 0; i < data.length(); i++) {
                                     JSONObject post = data.getJSONObject(i);
                                     System.out.println("POST: " + post);
-                                    {
-                                        try {
+                                    /*try {
 
-                                            String Message = post.toString();
+                                        String Message = post.toString();
 
-                                            FileOutputStream fileOutputStream = getContext().openFileOutput(Constants.SAVED_FILE_NAME,Context.MODE_APPEND);
-                                            fileOutputStream.write(Message.getBytes());
-                                            fileOutputStream.close();
+                                        FileOutputStream fileOutputStream = getContext().openFileOutput(Constants.SAVED_FILE_NAME, Context.MODE_APPEND);
+                                        fileOutputStream.write(Message.getBytes());
+                                        fileOutputStream.close();
 
-                                            System.out.println("Message: " + Message);
+                                        System.out.println("Message: " + Message);
 
-                                            File dir = Environment.getExternalStorageDirectory();
-                                            String path = dir.getAbsolutePath();
+                                        File dir = Environment.getExternalStorageDirectory();
+                                        String path = dir.getAbsolutePath();
 
-                                            System.out.println("DIR: " + path);
+                                        System.out.println("DIR: " + path);
 
 
-                                        } catch (Exception e) {
-                                            Log.e("Exception", "File save failed: " + e.toString());
-                                            e.printStackTrace();
-                                        }
-                                    };
+                                    } catch (Exception e) {
+                                        Log.e("Exception", "File save failed: " + e.toString());
+                                        e.printStackTrace();
+                                    }*/
 
                                     Feed feed = gson.fromJson(post.toString(), Feed.class);
 
@@ -166,6 +169,10 @@ public class FeedFragment extends Fragment {
                                 if (nextRequest != null) {
                                     nextRequest.setCallback(this);
                                     nextRequest.executeAsync();
+                                } else {
+                                    feedAdapter.notifyDataSetChanged();
+
+                                    showNotification();
                                 }
 
                             } catch (JSONException e) {
@@ -180,7 +187,7 @@ public class FeedFragment extends Fragment {
             request.setParameters(parameters);
             request.executeAsync();
 
-        } else if (isNetworkAvaible == false && feeds != null ) {
+        }/* else if (!feeds.isEmpty()) {
             System.out.println("FEEDS PROBA letoltve:" + feeds);
 
             try {
@@ -189,7 +196,8 @@ public class FeedFragment extends Fragment {
 
                 BufferedReader br = new BufferedReader(new InputStreamReader(fileInputStream));
 
-                Type type = new TypeToken<List<Feed>>(){}.getType();
+                Type type = new TypeToken<List<Feed>>() {
+                }.getType();
                 List<Feed> feedsRead = gsonRead.fromJson(br, type);
 
                 JSONObject jsonObject = (JSONObject) feedsRead;
@@ -216,15 +224,25 @@ public class FeedFragment extends Fragment {
 
             Toast.makeText(getActivity(), "Internet kapcsolat nélkül lehetséges, hogy a legfrisebb adatok nem tekinthetőek meg!", Toast.LENGTH_SHORT).show();
 
-        } else {
+        }*/ else {
             System.out.println("FEEDS PROBA:" + feeds);
             Toast.makeText(getActivity(), "Internet kapcsolat szűkséges elsőnek az adatok letöltéséhez!", Toast.LENGTH_SHORT).show();
         }
-        return feeds;
+    }
+
+    private void showNotification() {
+        NotificationCompat.Builder mBuilder =
+                new NotificationCompat.Builder(context)
+                        .setSmallIcon(R.drawable.ttik_prof_pic)
+                        .setContentTitle("Adatok frissítve")
+                        .setContentText("SZTE TTIK Informatika Intézet");
+        NotificationManager mNotificationManager =
+                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        mNotificationManager.notify(1, mBuilder.build());
     }
 
     private void initializeAdapter() {
-        FeedAdapter feedAdapter = new FeedAdapter(feeds);
+        feedAdapter = new FeedAdapter(feeds);
         recyclerView.setAdapter(feedAdapter);
     }
 }

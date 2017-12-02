@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FeedFragment feedFragment;
     private GameFragment gameFragment;
+    private SettingsFragment settingsFragment;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
                     getSupportFragmentManager().beginTransaction().replace(R.id.content, gameFragment).commit();
                     return true;
                 case  R.id.navigation_home:
-                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(intent);
+                    if(settingsFragment == null) {
+                        settingsFragment = new SettingsFragment();
+                    }
+                    getSupportFragmentManager().beginTransaction().replace(R.id.content, settingsFragment).commit();
             }
             return false;
         }
@@ -48,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setSelectedItemId(R.id.navigation_feed);
     }
 
 }

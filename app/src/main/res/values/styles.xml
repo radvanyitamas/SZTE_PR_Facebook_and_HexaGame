@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PaddingText">
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="PostTitle" parent="PaddingText">
+        <item name="android:elegantTextHeight">true</item>
+        <item name="android:text">SZTE TTIK Informatikai Intézet</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="PostCreatedTime">
+        <item name="android:textStyle">italic</item>
+    </style>
+
 </resources>

@@ -32,26 +32,20 @@
                 android:src="@drawable/ttik_prof_pic" />
 
             <TextView
-                android:id="@+id/textView"
+                style="@style/PostTitle"
+                android:id="@+id/textViewPostTitle"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:elegantTextHeight="true"
-                android:paddingBottom="5dp"
-                android:paddingLeft="@dimen/feed_item_status_pad_left_right"
-                android:paddingRight="@dimen/feed_item_status_pad_left_right"
-                android:paddingTop="@dimen/feed_item_status_pad_top"
-                android:text="SZTE TTIK Informatikai Intézet"
-                android:textSize="26sp" />
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
 
         <TextView
+            style="@style/PostCreatedTime"
             android:id="@+id/feedCreatedTime"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
-            android:hint="CreatedTime"
             android:visibility="gone"
             android:paddingLeft="@dimen/feed_item_status_pad_left_right"
             android:paddingRight="@dimen/feed_item_status_pad_left_right"
@@ -60,7 +54,6 @@
         <TextView
             android:id="@+id/feedStory"
             android:visibility="gone"
-            android:hint="Story"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -71,7 +64,6 @@
         <TextView
             android:id="@+id/feedDescription"
             android:visibility="gone"
-            android:hint="Description"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
@@ -81,7 +73,6 @@
 
         <TextView
             android:id="@+id/feedMessage"
-            android:hint="Message"
             android:visibility="gone"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

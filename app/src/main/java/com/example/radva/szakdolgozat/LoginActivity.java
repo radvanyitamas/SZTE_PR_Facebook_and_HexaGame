@@ -3,6 +3,7 @@ package com.example.radva.szakdolgozat;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -10,6 +11,7 @@ import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.Profile;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
@@ -56,7 +58,9 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(accessToken != null) {
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putString(Constants.PREFENCES_ACCESS_TOKEN, accessToken.getToken());
+                    editor.putString(Constants.PREFERENCES_USER_ID, Profile.getCurrentProfile().getId());
+                    editor.putString(Constants.PREFERENCES_USER_FIRST_NAME, Profile.getCurrentProfile().getFirstName());
+                    editor.putString(Constants.PREFERENCES_USER_LAST_NAME, Profile.getCurrentProfile().getLastName());
                     editor.commit();
 
                     goToMainActivity();
@@ -84,6 +88,7 @@ public class LoginActivity extends AppCompatActivity {
     private void goToMainActivity() {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
+        finish();
     }
 
     @Override

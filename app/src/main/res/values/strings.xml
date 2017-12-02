@@ -10,6 +10,9 @@
     <string name="selectFeedLabel">Kategória választás</string>
     <string name="kiv_laszt">Kiválaszt</string>
     <string name="feedSaved">Fájl mentése sikeresen megtörtént! Offline is elérhető!</string>
+    <string name="title_settings">Settings</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="take_picture">Take picture</string>
 
     <string-array name="selectFeedType">
         <item>Diákoknak</item>

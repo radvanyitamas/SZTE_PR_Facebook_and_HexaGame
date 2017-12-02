@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SZTE_PR_Facebook_and_HexaGame.iml" filepath="$PROJECT_DIR$/SZTE_PR_Facebook_and_HexaGame.iml" />
+      <module fileurl="file://D:\Users\radva\Documents\GitHub\SZTE_PR_Facebook_and_HexaGame\SZTE_PR_Facebook_and_HexaGame.iml" filepath="D:\Users\radva\Documents\GitHub\SZTE_PR_Facebook_and_HexaGame\SZTE_PR_Facebook_and_HexaGame.iml" />
       <module fileurl="file://D:\GitHub\SZTE_PR_Facebook_and_HexaGame\Szakdolgozat.iml" filepath="D:\GitHub\SZTE_PR_Facebook_and_HexaGame\Szakdolgozat.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Users\radva\Documents\GitHub\SZTE_PR_Facebook_and_HexaGame\app\app.iml" filepath="D:\Users\radva\Documents\GitHub\SZTE_PR_Facebook_and_HexaGame\app\app.iml" />
     </modules>
   </component>
 </project>
