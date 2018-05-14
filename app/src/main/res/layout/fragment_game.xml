@@ -23,7 +23,9 @@
 
         <include
             layout="@layout/circle"
-            android:visibility="invisible" />
+            android:text="1"
+            android:id="@+id/mezo001"/>
+            <!--android:visibility="invisible" -->
 
         <include
             layout="@layout/circle"
@@ -33,7 +35,8 @@
             layout="@layout/circle"
             android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include layout="@layout/circle"
+            android:id="@+id/mezo002"/>
 
         <include layout="@layout/circle" />
 

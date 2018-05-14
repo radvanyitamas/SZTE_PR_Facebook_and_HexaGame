@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
     private FeedFragment feedFragment;
     private GameFragment gameFragment;
-    private SettingsFragment settingsFragment;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,11 +32,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.content, gameFragment).commit();
                     return true;
-                case  R.id.navigation_home:
-                    if(settingsFragment == null) {
-                        settingsFragment = new SettingsFragment();
-                    }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.content, settingsFragment).commit();
             }
             return false;
         }

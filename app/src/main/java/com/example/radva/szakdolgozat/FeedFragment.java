@@ -1,20 +1,15 @@
 package com.example.radva.szakdolgozat;
 
-import android.app.Activity;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,18 +23,11 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStreamReader;
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,9 +55,9 @@ public class FeedFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_feed, container, false);
-        recyclerView = (RecyclerView) root.findViewById(R.id.recyclerView);
+        recyclerView = root.findViewById(R.id.recyclerView);
 
-        Spinner mySpinner = (Spinner) root.findViewById(R.id.spinner);
+        Spinner mySpinner = root.findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getContext(), R.array.selectFeedType, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mySpinner.setAdapter(adapter);
@@ -239,6 +227,7 @@ public class FeedFragment extends Fragment {
         NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(1, mBuilder.build());
+
     }
 
     private void initializeAdapter() {
