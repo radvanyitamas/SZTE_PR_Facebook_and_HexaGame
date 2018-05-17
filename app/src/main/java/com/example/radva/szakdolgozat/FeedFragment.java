@@ -127,26 +127,6 @@ public class FeedFragment extends Fragment {
                                 for (int i = 0; i < data.length(); i++) {
                                     JSONObject post = data.getJSONObject(i);
                                     System.out.println("POST: " + post);
-                                    /*try {
-
-                                        String Message = post.toString();
-
-                                        FileOutputStream fileOutputStream = getContext().openFileOutput(Constants.SAVED_FILE_NAME, Context.MODE_APPEND);
-                                        fileOutputStream.write(Message.getBytes());
-                                        fileOutputStream.close();
-
-                                        System.out.println("Message: " + Message);
-
-                                        File dir = Environment.getExternalStorageDirectory();
-                                        String path = dir.getAbsolutePath();
-
-                                        System.out.println("DIR: " + path);
-
-
-                                    } catch (Exception e) {
-                                        Log.e("Exception", "File save failed: " + e.toString());
-                                        e.printStackTrace();
-                                    }*/
 
                                     Feed feed = gson.fromJson(post.toString(), Feed.class);
 
@@ -175,44 +155,7 @@ public class FeedFragment extends Fragment {
             request.setParameters(parameters);
             request.executeAsync();
 
-        }/* else if (!feeds.isEmpty()) {
-            System.out.println("FEEDS PROBA letoltve:" + feeds);
-
-            try {
-                Gson gsonRead = new Gson();
-                FileInputStream fileInputStream = getContext().openFileInput(Constants.SAVED_FILE_NAME);
-
-                BufferedReader br = new BufferedReader(new InputStreamReader(fileInputStream));
-
-                Type type = new TypeToken<List<Feed>>() {
-                }.getType();
-                List<Feed> feedsRead = gsonRead.fromJson(br, type);
-
-                JSONObject jsonObject = (JSONObject) feedsRead;
-
-                try {
-                    JSONArray data = jsonObject.getJSONArray("data");
-                    for (int i = 0; i < data.length(); i++) {
-                        JSONObject post = data.getJSONObject(i);
-                        System.out.println("POST: " + post);
-
-
-                        Feed feed = gson.fromJson(post.toString(), Feed.class);
-
-                        feeds.add(feed);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            } catch (Exception e) {
-                Log.e("Exception", "File open failed: " + e.toString());
-                e.printStackTrace();
-            }
-
-            Toast.makeText(getActivity(), "Internet kapcsolat nélkül lehetséges, hogy a legfrisebb adatok nem tekinthetőek meg!", Toast.LENGTH_SHORT).show();
-
-        }*/ else {
+        } else {
             System.out.println("FEEDS PROBA:" + feeds);
             Toast.makeText(getActivity(), "Internet kapcsolat szűkséges elsőnek az adatok letöltéséhez!", Toast.LENGTH_SHORT).show();
         }

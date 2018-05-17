@@ -5,10 +5,290 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/kiertekeles"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:text="Kiértékelés" />
+
+    <!-- Felső értékek listája -->
+
+    <TextView
+        android:id="@+id/f01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/f02"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f02"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/f03"
+        android:text="6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f03"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/f04"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f04"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/f05"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f05"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/f06"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f06"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toLeftOf="@+id/felKoz"
+        android:text="1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/felKoz"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_centerHorizontal="true"
+        android:text="8"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f08"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/felKoz"
+        android:text="1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f09"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/f08"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f10"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/f09"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f11"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/f10"
+        android:text="2"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/f11"
+        android:text="6"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/f13"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@+id/hexGrid1"
+        android:layout_toRightOf="@+id/f12"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <!-- Bal oldali értékek listája -->
+    <TextView
+        android:id="@+id/bMertek"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+    <TextView
+        android:id="@+id/b01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/b02"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="0--"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/b02"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/b03"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="5--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b03"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/b04"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="1--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b04"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/b05"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b05"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/b06"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b06"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/balKoz"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/balKoz"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b08"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/balKoz"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b09"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/b08"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b10"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/b09"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b11"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/b10"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="3--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/b11"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="4--"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/b13"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textAlignment="center"
+        android:layout_below="@id/b12"
+        android:layout_toLeftOf="@id/hexGrid1"
+        android:gravity="left"
+        android:rotation="-30"
+        android:text="0--" />
+
+
     <com.example.radva.szakdolgozat.HexGrid
         android:id="@+id/hexGrid1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:columnWidth="0dp"
         android:gravity="top"
         android:horizontalSpacing="0dp"
@@ -18,12 +298,12 @@
         android:verticalSpacing="0dp"
         app:max_columns="13"
         app:max_rows="13"
-        app:radius="15dp"
+        app:radius="14dp"
         app:start_indented="false">
 
         <include
             layout="@layout/circle"
-            android:visibility="invisible"/>
+            android:visibility="invisible" />
 
         <include
             layout="@layout/circle"
@@ -674,5 +954,151 @@
             android:visibility="invisible" />
 
     </com.example.radva.szakdolgozat.HexGrid>
+
+    <!-- Jobb oldali értékek listája -->
+
+    <TextView
+        android:id="@+id/j01"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/j02"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--0"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j02"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/j03"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--5"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j03"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/j04"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j04"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/j05"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j05"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/j06"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j06"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_above="@id/jobbKoz"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/jobbKoz"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j08"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/jobbKoz"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j09"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/j08"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j10"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/j09"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j11"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/j10"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--3"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j12"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/j11"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--4"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/j13"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:textAlignment="center"
+        android:layout_below="@id/j12"
+        android:layout_toRightOf="@id/hexGrid1"
+        android:gravity="right"
+        android:rotation="30"
+        android:text="--0" />
 
 </RelativeLayout>

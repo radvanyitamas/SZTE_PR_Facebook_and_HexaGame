@@ -1,18 +1,7 @@
 package com.example.radva.szakdolgozat;
 
-import android.content.Context;
-import android.graphics.Color;
-import android.graphics.ColorFilter;
-import android.graphics.ColorSpace;
-import android.graphics.drawable.Drawable;
-import android.graphics.drawable.shapes.Shape;
-import android.os.Build;
 import android.os.Bundle;
-import android.renderscript.Sampler;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
-import android.text.Layout;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,14 +9,20 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
 
 public class GameFragment extends Fragment {
 
+    int count = 5;
 
     public GameFragment() {
 
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -162,13 +157,46 @@ public class GameFragment extends Fragment {
         final ImageView mezo126 = view.findViewById(R.id.mezo126);
         final ImageView mezo127 = view.findViewById(R.id.mezo127);
 
+        final Button kiertekel = view.findViewById(R.id.kiertekeles);
+
+        Map<Integer, String> validArea = new HashMap<>();
+        validArea.put(1,"mezo005");
+        validArea.put(1,"mezo012");
+        validArea.put(1,"mezo017");
+
+
+
+        kiertekel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mezo005.isActivated() && mezo012.isActivated() && mezo017.isActivated() && mezo023.isActivated() &&
+                        mezo029.isActivated() && mezo042.isActivated() && mezo055.isActivated() && mezo068.isActivated() &&
+                        mezo081.isActivated() && mezo094.isActivated() && mezo101.isActivated() && mezo108.isActivated() &&
+                        mezo114.isActivated() && mezo119.isActivated() && mezo123.isActivated() && mezo014.isActivated() &&
+                        mezo020.isActivated() && mezo027.isActivated() && mezo034.isActivated() && mezo047.isActivated() &&
+                        mezo060.isActivated() && mezo073.isActivated() && mezo086.isActivated() && mezo099.isActivated() &&
+                        mezo105.isActivated() && mezo111.isActivated() && mezo104.isActivated() && mezo097.isActivated() &&
+                        mezo090.isActivated() && mezo077.isActivated() && mezo064.isActivated() && mezo051.isActivated() &&
+                        mezo038.isActivated() && mezo025.isActivated()
+
+                        ) {
+                    Toast.makeText(getContext(), "Sikerült kitalálni az ábrát. Gratulálok!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getContext(), "Sajnos nem sikerült még kitalálni az ábrát. Probálkozz újra!", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
+
         mezo001.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!mezo001.isActivated()) {
                     mezo001.setActivated(true);
+                    count--;
                 } else {
                     mezo001.setActivated(false);
+                    count++;
                 }
             }
         });
