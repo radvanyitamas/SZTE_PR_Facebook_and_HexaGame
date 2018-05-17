@@ -23,32 +23,7 @@
 
         <include
             layout="@layout/circle"
-            android:text="1"
-            android:id="@+id/mezo001"/>
-            <!--android:visibility="invisible" -->
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle"
-            android:id="@+id/mezo002"/>
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
+            android:visibility="invisible"/>
 
         <include
             layout="@layout/circle"
@@ -59,322 +34,32 @@
             android:visibility="invisible" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
+            android:id="@+id/mezo022"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
+            android:id="@+id/mezo035"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
+            android:id="@+id/mezo048"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
+            android:id="@+id/mezo061"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
+            android:id="@+id/mezo074"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
+            android:id="@+id/mezo087"
+            layout="@layout/circle" />
 
         <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include
-            layout="@layout/circle"
-            android:visibility="invisible" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
-
-        <include layout="@layout/circle" />
+            android:id="@+id/mezo100"
+            layout="@layout/circle" />
 
         <include
             layout="@layout/circle"
@@ -396,19 +81,585 @@
             layout="@layout/circle"
             android:visibility="invisible" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo016"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo029"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo042"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo055"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo068"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo081"
+            layout="@layout/circle" />
 
-        <include layout="@layout/circle" />
+        <include
+            android:id="@+id/mezo094"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo107"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo011"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo023"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo036"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo049"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo062"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo075"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo088"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo101"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo113"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo007"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo017"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo030"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo043"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo056"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo069"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo082"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo095"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo108"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo118"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo004"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo012"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo024"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo037"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo050"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo063"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo076"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo089"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo102"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo114"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo122"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo002"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo008"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo018"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo031"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo044"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo057"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo070"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo083"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo096"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo109"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo119"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo125"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo001"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo005"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo013"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo025"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo038"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo051"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo064"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo077"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo090"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo103"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo115"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo123"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo127"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo003"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo009"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo019"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo032"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo045"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo058"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo071"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo084"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo097"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo110"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo120"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo126"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo006"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo014"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo026"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo039"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo052"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo065"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo078"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo091"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo104"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo116"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo124"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo010"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo020"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo033"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo046"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo059"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo072"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo085"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo098"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo111"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo121"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo015"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo027"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo040"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo053"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo066"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo079"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo092"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo105"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo117"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo021"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo034"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo047"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo060"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo073"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo086"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo099"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo112"
+            layout="@layout/circle" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            layout="@layout/circle"
+            android:visibility="invisible" />
+
+        <include
+            android:id="@+id/mezo028"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo041"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo054"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo067"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo080"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo093"
+            layout="@layout/circle" />
+
+        <include
+            android:id="@+id/mezo106"
+            layout="@layout/circle" />
 
         <include
             layout="@layout/circle"
