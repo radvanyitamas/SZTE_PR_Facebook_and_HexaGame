@@ -44,6 +44,7 @@ public class FeedFragment extends Fragment {
     private RecyclerView recyclerView;
 
     final List<Feed> feeds = new ArrayList<>();
+    final List<Feed> recentDataList = new ArrayList<>();
 
     static final int READ_BLOCK_SIZE = 100;
     private FeedAdapter feedAdapter;
@@ -185,7 +186,12 @@ public class FeedFragment extends Fragment {
     }
 
     private void initializeAdapter() {
-        feedAdapter = new FeedAdapter(feeds);
-        recyclerView.setAdapter(feedAdapter);
+        if(!isNetworkAvaible && !recentDataList.isEmpty()) {
+            feedAdapter = new FeedAdapter(recentDataList);
+            recyclerView.setAdapter(feedAdapter);
+        } else {
+            feedAdapter = new FeedAdapter(feeds);
+            recyclerView.setAdapter(feedAdapter);
+        }
     }
 }
