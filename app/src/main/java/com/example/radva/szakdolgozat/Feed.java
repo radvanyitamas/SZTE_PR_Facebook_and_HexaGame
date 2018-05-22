@@ -10,6 +10,26 @@ public class Feed{
     String story;
     String message;
 
+    public static final String TABLE_NAME = "feeds";
+    public static final String COLUMN_ID = "id";
+    public static final String COLUMN_FEED_ID = "feed_id";
+    public static final String COLUMN_DESCRIPTION = "description";
+    public static final String COLUMN_FULLPICUTRE = "full_picture";
+    public static final String COLUMN_LINK = "link";
+    public static final String COLUMN_CREATEDTIME = "created_time";
+    public static final String COLUMN_STORY = "story";
+    public static final String COLUMN_MESSAGE = "message";
+
+    public final static String CREATE_TABLE =  "CREATE TABLE " + TABLE_NAME + "(" +COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+            + COLUMN_FEED_ID + " TEXT"
+            + COLUMN_DESCRIPTION + " TEXT,"
+            + COLUMN_FULLPICUTRE + " TEXT,"
+            + COLUMN_LINK + " TEXT,"
+            + COLUMN_CREATEDTIME + " TEXT,"
+            + COLUMN_STORY + " TEXT,"
+            + COLUMN_MESSAGE + " TEXT"
+            + ")";
+
 
     public Feed(String id, String description, String fullPicture, String link, String createdTime, String story, String message) {
         this.id = id;

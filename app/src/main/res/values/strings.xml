@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Szakdolgozat</string>
+    <string name="app_name">SZTE TTIK Info PR</string>
     <string name="facebook_app_id">352105535246813</string>
     <string name="fb_login_protocol_scheme">fb352105535246813</string>
     <string name="facebook_login">Bejelentkezés Facebookkal</string>
